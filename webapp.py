@@ -2,7 +2,7 @@ import streamlit as st
 import tensorflow as tf
 from PIL import Image
 import numpy as np
-from keras._tf_keras.keras.preprocessing.image import image  # Updated import
+from tensorflow.keras.preprocessing import image  # Corrected import
 
 model = tf.keras.models.load_model('trained_model.h5')
 
